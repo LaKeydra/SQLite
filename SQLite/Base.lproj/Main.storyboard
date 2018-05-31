@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SQLite" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uPN-hP-dfH">
+                                <rect key="frame" x="162" y="70" width="50" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="SoP-kv-XlT"/>
+                                    <constraint firstAttribute="width" constant="50" id="i1X-fm-Qd5"/>
+                                </constraints>
+                                <state key="normal" title="增"/>
+                                <connections>
+                                    <action selector="addAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Q1-lW-YCg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6O4-0C-uml">
+                                <rect key="frame" x="162.5" y="190" width="50" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="TJ0-Ta-nKz"/>
+                                    <constraint firstAttribute="width" constant="50" id="qxV-7P-gL7"/>
+                                </constraints>
+                                <state key="normal" title="改"/>
+                                <connections>
+                                    <action selector="updateAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b3w-8J-PZV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qfp-py-ZSG">
+                                <rect key="frame" x="162.5" y="250" width="50" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Im1-5O-xIj"/>
+                                    <constraint firstAttribute="height" constant="30" id="SRg-AL-VI4"/>
+                                </constraints>
+                                <state key="normal" title="查"/>
+                                <connections>
+                                    <action selector="searchAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Lv-Jm-g5d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SzJ-3W-woX">
+                                <rect key="frame" x="162.5" y="130" width="50" height="30"/>
+                                <color key="backgroundColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="DjC-Jj-nNu"/>
+                                    <constraint firstAttribute="width" constant="50" id="fpb-rz-Rkx"/>
+                                </constraints>
+                                <state key="normal" title="删"/>
+                                <connections>
+                                    <action selector="deteleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fOO-NP-9RX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ViC-CR-b2b">
+                                <rect key="frame" x="87.5" y="380" width="200" height="50"/>
+                                <color key="backgroundColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="R6f-Ee-8Fv"/>
+                                    <constraint firstAttribute="width" constant="200" id="gXh-Cz-OzH"/>
+                                </constraints>
+                                <state key="normal" title="建表"/>
+                                <connections>
+                                    <action selector="createTableAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Yx-Ha-0Kn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oGD-SP-DLj">
+                                <rect key="frame" x="49" y="480" width="90" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Ify-Xt-4vv"/>
+                                    <constraint firstAttribute="width" constant="90" id="Ukd-oC-9d7"/>
+                                </constraints>
+                                <state key="normal" title="增加表字段"/>
+                                <connections>
+                                    <action selector="addTableField:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cfi-wl-kxr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MMF-cR-0kX">
+                                <rect key="frame" x="251.5" y="480" width="60" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="9Id-ug-x0R"/>
+                                    <constraint firstAttribute="width" constant="60" id="thp-or-rU8"/>
+                                </constraints>
+                                <state key="normal" title="删除表"/>
+                                <connections>
+                                    <action selector="deleteTable:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lD7-Na-nw7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uPN-hP-dfH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3V0-i6-Ivr"/>
+                            <constraint firstItem="ViC-CR-b2b" firstAttribute="top" secondItem="Qfp-py-ZSG" secondAttribute="bottom" constant="100" id="6U9-e1-k5V"/>
+                            <constraint firstItem="SzJ-3W-woX" firstAttribute="top" secondItem="uPN-hP-dfH" secondAttribute="bottom" constant="30" id="JK1-AO-6Ub"/>
+                            <constraint firstItem="Qfp-py-ZSG" firstAttribute="top" secondItem="6O4-0C-uml" secondAttribute="bottom" constant="30" id="QYY-Zh-VIe"/>
+                            <constraint firstItem="ViC-CR-b2b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RQi-xh-gVE"/>
+                            <constraint firstItem="oGD-SP-DLj" firstAttribute="top" secondItem="ViC-CR-b2b" secondAttribute="bottom" constant="50" id="a3l-Kf-0zP"/>
+                            <constraint firstItem="SzJ-3W-woX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cVK-nJ-vHQ"/>
+                            <constraint firstItem="MMF-cR-0kX" firstAttribute="top" secondItem="ViC-CR-b2b" secondAttribute="bottom" constant="50" id="dJu-SJ-M4X"/>
+                            <constraint firstItem="6O4-0C-uml" firstAttribute="top" secondItem="SzJ-3W-woX" secondAttribute="bottom" constant="30" id="fPY-ih-dHo"/>
+                            <constraint firstItem="6O4-0C-uml" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fzw-QZ-61y"/>
+                            <constraint firstItem="Qfp-py-ZSG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ils-T0-pDe"/>
+                            <constraint firstItem="MMF-cR-0kX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1.5" id="kKk-NM-ghY"/>
+                            <constraint firstItem="uPN-hP-dfH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="tof-T8-ccX"/>
+                            <constraint firstItem="oGD-SP-DLj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="0.5" id="za1-jM-Qk4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
